@@ -1,0 +1,152 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff; /* Bootstrap primary color */
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex; /* Create Flex container */
+    justify-content: space-between; /* Space between brand and navigation */
+    align-items: center; /* Align items vertically center */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.navbar .navbar-nav {
+    display: flex; /* Create Flex container for nav items */
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white !important; /* White links */
+    margin: 0 15px; /* Adjust margin for spacing */
+}
+
+/* Hero Section Styling */
+.hero {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* About Section Styling */
+.about {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px; /* Circular profile picture */
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex; /* Create Flex container */
+    flex-wrap: wrap; /* Allow skills to wrap */
+    justify-content: center; /* Center items horizontally */
+}
+
+.skill {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    flex: 1 1 150px; /* Allow skills to grow, shrink, and set a base width */
+    min-width: 120px; /* Minimum width for responsiveness */
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 0;
+}
+
+.projects-container {
+    display: flex; /* Create Flex container */
+    flex-wrap: wrap; /* Allow wrapping of project cards */
+    justify-content: center; /* Center items horizontally */
+}
+
+.project-card {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 15px;
+    background-color: #fff;
+    flex: 1 1 300px; /* Allow cards to grow and shrink, set base width */
+    max-width: 300px; /* Prevent cards from exceeding width */
+}
+
+.project-card img {
+    width: 100%; /* Responsive image */
+    height: auto;
+}
+
+.project-card-body {
+    padding: 15px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Vertical alignment */
+    max-width: 500px; /* Center the form */
+    margin: 0 auto; /* Center the form */
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+footer h5 {
+    margin-bottom: 10px;
+}
